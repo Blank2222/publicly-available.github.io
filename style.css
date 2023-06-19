@@ -1,0 +1,108 @@
+body{
+    height: 100vh;
+    background-color: #730261;
+}
+.buttonNo1{
+    background-color: #363636;
+    box-shadow: 7px 10px 5px #1D1D1D;
+}
+.hd1{
+    font-size: 60px;
+    font-weight: 700;
+    color: #4C956C;
+}
+.hd2{
+    font-size: 60px;
+    font-weight: 500;
+    color: #031e26;
+}
+.labelForInput{
+    width: 15%;
+}
+.radioButtonAns{
+    width: 40px;
+    height: 40px;
+}
+
+/* style for radiobuttons - createquiz.php */
+.custom-radio-button div {
+    display: inline-block;
+  }
+input[type="radio"] {
+  display: none;
+}
+.custom-radio-button input[type="radio"] + label span {
+  display: inline-block; /* must be, but I guess can be replaced by another value */
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  background: url("https://www.positronx.io/wp-content/uploads/2019/06/tick-icon-4657-01.png")
+  center center no-repeat;
+  background-color: grey;
+  opacity: 0.5;
+}
+.custom-radio-button input[type="radio"]:checked + label span {
+  opacity: 1;
+  background: url("https://www.positronx.io/wp-content/uploads/2019/06/tick-icon-4657-01.png")
+    center center no-repeat;
+  background-color: green;
+  width: 40px;
+  height: 40px;
+  display: inline-block;    /* can be removed I guess */
+}
+
+/* for results for teacher */
+.theTable .row .col {
+  height: 50%;
+  margin: 0px 0px;
+}
+
+.answerCell {
+  display: flexbox;
+  background-color: gray;
+}
+
+.DefVariant {   /*for results for student*/
+  padding: 0px;
+  max-width: 412px;
+  background-color: gray;
+}
+
+.DefVariant {   /* fpr student results */
+  padding: 0px;
+  max-width: 412px;
+  background-color: gray;
+}
+
+.answerWrong, .StudAns {
+  background-color: red;
+}
+
+.answerRight, .CorAns {
+  background-color: lightgreen;
+}
+
+.txtResponsive {
+  font-size:calc(1.9vw + 1.4vh);
+}
+
+.txtResponsive2 {
+  font-size:calc(1.2vw + 1.1vh);
+  font-weight: 100;
+}
+
+input[type="text"], input[type="password"] {
+  font-size:calc(1.2vw + 1.1vh);
+}
+
+button {
+  min-width: 10%;
+}
+
+input[type="radio"] .resRad {
+  display: inline;
+}
